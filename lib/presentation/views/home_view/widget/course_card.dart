@@ -90,20 +90,33 @@ class CourseCard extends StatelessWidget {
                   ),
 
 
-                    Chip(
-                      label: Text('${course.totalClass ?? "95"} Classes'),
-                      backgroundColor: Colors.blue[50],
-                    ),
-                    Chip(
-                      label: Text('${course.totalExam ?? "93"} Exams'),
-                      backgroundColor: Colors.blue[50],
-                    ),
-                    Chip(
-                      label: Text('${course.totalLive ?? "95"} Live'),
-                      backgroundColor: Colors.blue[50],
-                    ),
+
                 ],
               ),
+              Row(
+                children: [
+                  Chip(
+                    label: Text('${course.totalClass ?? "95"} Classes'),
+                backgroundColor: Colors.blue[50],
+              ),
+              SizedBox(width: 4,),
+              Chip(
+                label: Text('${course.totalExam ?? "93"} Exams'),
+                backgroundColor: Colors.blue[50],
+              ),
+                  SizedBox(width: 4,),
+
+              Chip(
+                label: Text('${course.totalLive ?? "95"} Live'),
+                backgroundColor: Colors.blue[50],
+              ),
+                  SizedBox(width: 4,),
+
+
+                ],
+              )
+
+
             ],
           ),
         ),

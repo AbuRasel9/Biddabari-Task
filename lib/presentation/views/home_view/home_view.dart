@@ -50,9 +50,10 @@ class _CourseListViewState extends State<CourseListView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[50],
       appBar: AppBar(
         title: const Text('Course List'),
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor:Colors.white,
         actions: [
           IconButton(
             icon: const Icon(Icons.refresh),
